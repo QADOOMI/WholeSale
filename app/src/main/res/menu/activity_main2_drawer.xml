@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="@string/app_name" />
+        <item
+            android:id="@+id/nav_wishlist"
+            android:icon="@drawable/ic_favorite_border_black_24dp"
+            android:iconTint="@color/white"
+            android:title="@string/wishlist_title" />
+        <item
+            android:id="@+id/nav_messages"
+            android:icon="@drawable/ic_message_black_24dp"
+            android:title="@string/messages_title" />
+        <item
+            android:id="@+id/nav_search"
+            android:icon="@drawable/ic_search_black_24dp"
+            android:title="@string/search_page_title" />
+    </group>
+
+    <item android:title="@string/communicate_header" >
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="@string/share_title" />
+            <item
+                android:id="@+id/nav_go_to_website"
+                android:icon="@drawable/ic_language_black_24dp"
+                android:title="@string/visit_our_website_title" />
+        </menu>
+    </item>
+
+    <item android:title="@string/profile_actions_header">
+        <menu>
+            <item
+                android:id="@+id/nav_update_acc"
+                android:icon="@drawable/ic_build_white_24dp"
+                android:title="@string/update_your_data_title" />
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/ic_power_settings_new_black_24dp"
+                android:title="@string/sign_out_title" />
+
+            <item
+                android:id="@+id/nav_delete_acc"
+                android:icon="@drawable/ic_delete_forever_black_24dp"
+                android:title="@string/delete_account_title" />
+
+        </menu>
+    </item>
+
+</menu>

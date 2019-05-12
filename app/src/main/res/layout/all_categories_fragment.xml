@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fadingEdge="vertical"
+    android:orientation="vertical">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/product_image_clothing"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:stateListAnimator="@animator/deep_click"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <android.support.design.button.MaterialButton
+            android:id="@+id/go_to_clothing"
+            style="@style/TextButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Clothing"
+            android:textColor="@color/gold"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toTopOf="@+id/product_image_clothing"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/product_image_clothing" />
+
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/product_image_auto"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:stateListAnimator="@animator/deep_click"
+            android:visibility="visible"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/product_image_clothing" />
+
+        <android.support.design.button.MaterialButton
+            android:id="@+id/go_to_auto"
+            style="@style/TextButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="AutomotiveParts"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toTopOf="@+id/product_image_auto"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/product_image_auto" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/product_image_food"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:stateListAnimator="@animator/deep_click"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/product_image_auto" />
+
+        <android.support.design.button.MaterialButton
+            android:id="@+id/go_to_food"
+            style="@style/TextButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:textColor="@color/red"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:layout_marginTop="8dp"
+            android:text="Food"
+            app:layout_constraintBottom_toTopOf="@+id/product_image_food"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/product_image_food" />
+
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/product_image_baby"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+
+            android:scaleType="centerCrop"
+            android:stateListAnimator="@animator/deep_click"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/product_image_food" />
+
+        <android.support.design.button.MaterialButton
+            android:id="@+id/go_to_baby"
+            style="@style/TextButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="16dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:text="Baby"
+            app:layout_constraintBottom_toTopOf="@+id/product_image_baby"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/product_image_baby" />
+
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/product_image_home"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/logo1"
+            android:stateListAnimator="@animator/deep_click"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/product_image_baby" />
+
+        <android.support.design.button.MaterialButton
+            android:id="@+id/go_to_home"
+            style="@style/TextButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="16dp"
+            android:text="Home"
+            android:textColor="@color/gold"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toTopOf="@+id/product_image_home"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="parent" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>

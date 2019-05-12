@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:layout_gravity="center|top"
+    android:padding="4dp">
+
+    <TextView
+        android:id="@+id/unit_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:layout_weight="1"
+        android:text="3.66JD"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/range_ofunits_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_weight="2"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:text="5000-6000 Unit"
+        android:padding="4dp"
+        android:layout_gravity="center"/>
+
+</LinearLayout>
+
